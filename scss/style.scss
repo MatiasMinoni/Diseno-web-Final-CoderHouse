@@ -183,7 +183,7 @@ background: -prefix-linear-gradient(to top, gray, white )
 
 
 .grid_items button{padding: 20px;
-  padding-inline: 100px;
+  padding-inline: 20%;
 }
 
 
@@ -264,7 +264,20 @@ margin-top: 0px;
     color: rgb(0, 0, 0);
     width: 100%;
   }
+  .grid_items{
+    display: grid;
+    width: 75%;
+    margin-left: 5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: white;
+    text-align: center;
+    padding-right: 85%;
+    
+    
+        }
 }
+
 // Queries
 // Boton de navbar
 .navbar-toggler{margin-top: 10px;
@@ -313,18 +326,30 @@ padding-right: 85%;
   }
 
       
-    
+ 
   
-      @media screen and(max-width: 424px) and (min-width: 321px){
+      @media screen and(max-width: 424px) and (min-width: 1px){
         .grid_tienda {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
           column-gap: 2rem;
           font-size: larger;
           color: rgb(0, 0, 0);
-          width: 100%;
+          width: 100px;
       
         }
+        .grid_items{
+        display: grid;
+        width: 50;
+        margin-left: 25px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        background-color: white;
+        text-align: center;
+       padding-right: 100px;
+        
+        
+            }
         .col{width: 100%;}
             }
           
@@ -338,7 +363,9 @@ padding-right: 85%;
               color: rgb(0, 0, 0);
               width: 100%;
           
-            }
+            }   
+              
+                  
             .col{width: 100%;}
           
             & button {margin-left: 10px;}
@@ -346,4 +373,33 @@ padding-right: 85%;
             
                 }
               
-     
+                @media screen and(max-width: 1000px) and (min-width: 768px){}
+             .grid_items{
+                    display: grid;
+                    width: 75%;
+                    margin-left: 5%;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+                    background-color: white;
+                    text-align: center;
+                    padding-right: 0%;
+                    
+                    
+                        }
+      
+                  
+                      
+                        @media screen and(max-width: 1500px) and (min-width: 1000px){}
+                        .grid_items{
+                               display: grid;
+                               width: 50%;
+                               margin-left: 25%;
+                               grid-template-columns: 1fr;
+                               grid-template-rows: auto;
+                               background-color: white;
+                               text-align: center;
+                               padding-right: 0%;
+                               
+                               
+                                   }
+                    
