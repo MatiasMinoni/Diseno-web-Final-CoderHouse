@@ -230,7 +230,9 @@ header {
     column-gap: 2rem;
     font-size: larger;
     color: black;
-    width: 200%; }
+    width: 100%; }
+  .col {
+    width: 100%; }
   .grid_items {
     display: grid;
     width: 75%;
@@ -241,36 +243,26 @@ header {
     text-align: center;
     padding-right: 85%; } }
 
-@media screen and (max-width: 375px) {
-  .grid_items {
+@media screen and (max-width: 424px) and (min-width: 321px) {
+  .grid_tienda {
     display: grid;
-    width: 75%;
-    margin-left: 5%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    background-color: white;
-    text-align: center; } }
-
-@media screen and (max-width: 424px) and (min-width: 375px) {
-  .grid_items {
-    display: grid;
-    width: 75%;
-    margin-left: 5%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    background-color: white;
-    text-align: center; }
-    .grid_items button {
-      margin-left: 5px; } }
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    font-size: larger;
+    color: black;
+    width: 100%; }
+  .col {
+    width: 100%; } }
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
-  .grid_items {
+  .grid_tienda {
     display: grid;
-    width: 75%;
-    margin-left: 5%;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    background-color: white;
-    text-align: center; }
-    .grid_items button {
-      margin-left: 10px; } }
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    font-size: larger;
+    color: black;
+    width: 100%; }
+  .col {
+    width: 100%; }
+  button {
+    margin-left: 10px; } }
