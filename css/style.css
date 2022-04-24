@@ -252,14 +252,14 @@ header {
     text-align: center;
     padding-right: 85%; } }
 
-@media screen and (max-width: 424px) and (min-width: 1px) {
+@media screen and (max-width: 424px) and (min-width: 321px) {
   .grid_tienda {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 2rem;
     font-size: larger;
     color: black;
-    width: 100px; }
+    width: 100%; }
   .grid_items {
     display: grid;
     width: 50;
